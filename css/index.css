@@ -1,0 +1,450 @@
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+ul {
+  margin-bottom: 0; }
+
+.lin {
+  margin: auto;
+  height: 6px;
+  width: 50px;
+  background: #f82249; }
+
+h2 {
+  color: #0e1b4d;
+  font-size: 40px; }
+
+.fixed-top {
+  z-index: 11; }
+
+.gray {
+  color: #9195a2 !important;
+  font-size: 18px !important; }
+
+.pinkbutton, .news button, .buy button, .contact button {
+  background: #f82249;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 25px;
+  outline: none; }
+
+.grayli {
+  color: #9195a2;
+  opacity: 0.7; }
+
+.fa-chevron-up {
+  background: #f82249;
+  color: white;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  display: none;
+  z-index: 1111111; }
+
+nav {
+  padding: 20px 0;
+  transition: .5s;
+  background: rgba(6, 12, 34, 0.98); }
+  nav img {
+    width: 200px; }
+  nav .container:first-of-type li {
+    display: inline-block;
+    position: relative; }
+  nav .container:first-of-type li:last-of-type {
+    color: white;
+    background: #f82249;
+    border-radius: 15px;
+    border: 2px solid #f82249;
+    transition: .5s;
+    padding: 5px 20px; }
+  nav .container:first-of-type li:last-of-type a {
+    color: white; }
+  nav .container:first-of-type li:last-of-type:hover {
+    background: none; }
+  nav .container:first-of-type li:not(:last-of-type) {
+    margin-right: 5px; }
+  nav .container:first-of-type a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(202, 206, 221, 0.8);
+    padding: 10px 5px;
+    font-weight: bold;
+    transition: 0.5s; }
+  nav .container:first-of-type .activee {
+    color: white; }
+  nav .container:first-of-type .act::after, nav .container:first-of-type li:not(:last-of-type):after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #f82249;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s; }
+  nav .container:first-of-type .act::after {
+    width: 100%; }
+  nav .container:first-of-type li:after {
+    width: 0%; }
+  nav .container:first-of-type li:hover:after {
+    width: 100%; }
+  nav .container:first-of-type li:hover a {
+    color: white;
+    text-decoration: none; }
+  nav i {
+    color: white;
+    font-size: 35px;
+    margin-top: 5px; }
+  nav .small-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(6, 12, 34, 0.8);
+    display: none; }
+    nav .small-nav ul {
+      background: rgba(6, 12, 34, 0.9);
+      width: 300px;
+      height: 100%;
+      position: absolute;
+      left: -300px; }
+    nav .small-nav a {
+      color: white;
+      padding: 15px 20px;
+      display: block;
+      transition: 0.5s; }
+    nav .small-nav a:hover {
+      color: #f82249;
+      text-decoration: none; }
+    nav .small-nav i {
+      position: absolute;
+      right: 30px;
+      top: 10px;
+      z-index: 111111; }
+
+header {
+  color: white;
+  height: 100vh;
+  background-image: url("../images/header.jpg");
+  background-size: 100% 100%;
+  position: relative;
+  background-attachment: fixed; }
+  header .overlay1 {
+    background: rgba(6, 12, 34, 0.8); }
+  header h1 {
+    font-size: 60px; }
+  header span {
+    color: #f82249; }
+  header p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px; }
+  header .play {
+    width: 70px;
+    height: 70px;
+    background: #f82249;
+    border-radius: 50%;
+    margin: 50px auto;
+    line-height: 70px; }
+  header button {
+    background: transparent;
+    border: 2px solid #f82249;
+    color: white;
+    border-radius: 15px;
+    padding: 7px 25px;
+    transition: .5s; }
+  header button:hover {
+    background-color: #f82249; }
+
+.about {
+  color: white;
+  background-image: url("../images/about.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  position: relative;
+  padding: 50px 0; }
+  .about .row {
+    z-index: 1;
+    position: relative; }
+  .about .overlay2 {
+    background: rgba(13, 20, 41, 0.8); }
+  .about h3 {
+    font-size: 40px; }
+  .about h4 {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px; }
+
+.speakers {
+  padding: 70px 0; }
+  .speakers .content {
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -31px;
+    background: rgba(6, 12, 34, 0.76);
+    transition: 0.5s; }
+  .speakers li {
+    display: inline-block; }
+  .speakers .overflow-hidden:hover .content {
+    bottom: 0; }
+  .speakers h3, .speakers li {
+    transition: .5s; }
+  .speakers h3:hover, .speakers li:hover {
+    color: #f82249; }
+  .speakers .list-unstyled li {
+    padding: 0 10px; }
+
+.event {
+  background-color: #f6f7fd;
+  padding: 70px 0; }
+  .event button {
+    border: none;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 90px;
+    font-weight: bold;
+    transition: .5s;
+    outline: none; }
+  .event button:first-of-type {
+    background: #f82249; }
+  .event button:not(:first-of-type) {
+    background: #0e1b4d; }
+  .event p.volu {
+    color: #0e1b4d;
+    font-size: 20px;
+    width: 75%;
+    margin: 30px auto; }
+  .event p {
+    color: #0e1b4d; }
+  .event .row {
+    border-bottom: 1px solid #cad4f6;
+    padding: 20px 0;
+    transition: 0.5s; }
+  .event h5 {
+    color: #0e1b4d; }
+  .event img {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px; }
+  .event .row:hover {
+    background: white; }
+  .event #two, .event #three {
+    display: none; }
+
+.venue {
+  padding: 70px 0; }
+  .venue .content {
+    color: white; }
+  .venue .iste {
+    padding: 49px 95px;
+    background-image: url("../images/venue.jpg");
+    background-size: 100% 100%;
+    position: relative; }
+  .venue h3 {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px; }
+  .venue .content {
+    position: relative;
+    z-index: 1; }
+  .venue .overlay3 {
+    background: rgba(13, 20, 41, 0.8); }
+  .venue .second-row {
+    margin-right: -3px;
+    margin-left: 0px; }
+  .venue .second-row > div {
+    padding-right: 0px;
+    padding-left: 0px; }
+  .venue .second-row > div > div {
+    border-right: 3px solid white;
+    overflow: hidden;
+    height: 100%; }
+  .venue img {
+    transition: 1s; }
+  .venue .second-row > div:hover img {
+    transform: scale(1.1); }
+  .venue .ven-pop {
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(6, 12, 34, 0.85);
+    padding: 0 20px;
+    display: none; }
+    .venue .ven-pop i {
+      color: white;
+      font-size: 40px; }
+  .venue .ven-child {
+    width: 70%;
+    height: 500px;
+    border: 8px solid rgba(255, 255, 255, 0.4); }
+    .venue .ven-child img {
+      width: 100%;
+      height: 100%; }
+  .venue .fa-times {
+    position: absolute;
+    top: 30px;
+    right: 30px; }
+
+.faq {
+  padding-bottom: 90px; }
+  .faq .content {
+    width: 70%;
+    margin: auto; }
+  .faq .content > div > div p {
+    font-weight: bold;
+    transition: 0.5s; }
+  .faq .content > div > p {
+    color: #9195a2;
+    display: none; }
+  .faq i {
+    font-size: 25px; }
+  .faq .content > div {
+    border-bottom: 1px solid #ddd;
+    margin: 15px 0; }
+
+.news {
+  color: white;
+  background-image: url("../images/news.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  position: relative; }
+  .news p {
+    font-size: 20px; }
+  .news h3 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif; }
+  .news .overlay4 {
+    background: rgba(6, 12, 34, 0.6); }
+  .news input {
+    border-radius: 15px;
+    border: none;
+    padding: 8px 20px;
+    width: 77%;
+    outline: none; }
+  .news div:first-of-type {
+    z-index: 1;
+    position: relative; }
+
+.buy {
+  padding: 70px 0;
+  background-color: #f6f7fd; }
+  .buy .row > div > div {
+    box-shadow: 0 0 4px; }
+  .buy p.text-center {
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  .buy i {
+    width: 25px; }
+  .buy li {
+    margin-bottom: 15px;
+    font-weight: 600; }
+  .buy ul {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  .buy p {
+    color: #0e1b4d;
+    font-size: 55px; }
+  .buy .pop-up {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 11;
+    display: none; }
+    .buy .pop-up .fa-times {
+      position: absolute;
+      right: 0;
+      top: 30px;
+      color: #9195a2; }
+  .buy .inner {
+    width: 70%;
+    background: white;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative; }
+  .buy label {
+    font-size: 25px; }
+
+.contact {
+  padding: 70px; }
+  .contact h5 {
+    color: #0e1b4d; }
+  .contact p {
+    color: #0e1b4d; }
+  .contact p:hover {
+    color: #f82249; }
+  .contact .first div:not(:last-of-type) {
+    border-right: 1px solid #b7b2b2; }
+  .contact input, .contact textarea {
+    border-width: 3px; }
+
+footer {
+  color: white;
+  background: #040919;
+  padding-top: 40px; }
+  footer h5 {
+    border-bottom: 2px solid #f82249;
+    padding-bottom: 10px; }
+  footer .row > div:nth-of-type(2) i {
+    color: #f82249;
+    margin-right: 10px; }
+  footer .row > div:nth-of-type(2) li {
+    border-bottom: 1px solid #262c44;
+    padding: 10px 0; }
+  footer .copy {
+    background: #101522;
+    padding: 25px 0; }
+    footer .copy p:last-of-type {
+      margin-bottom: 0; }
+  footer span {
+    color: #f82249; }
+  footer img {
+    width: 200px; }
+
+@media (max-width: 768px) {
+  .event button {
+    padding: 10px 10px; } }
+@media (max-width: 992px) {
+  h1 {
+    font-size: 30px !important; }
+
+  .venue .first-row > div {
+    padding-right: 15px !important;
+    padding-left: 15px !important; }
+
+  .venue .iste {
+    padding: 40px 50px; }
+
+  .venue h3 {
+    font-size: 30px; } }
+@media (max-width: 768px) {
+  .content > div > div p {
+    padding-right: 35px; }
+
+  h1, h2, h3, h4, h5, h6, p {
+    font-size: 16px !important;
+    font-weight: normal !important; }
+
+  nav img {
+    width: 100px; } }
+
+/*# sourceMappingURL=index.css.map */
