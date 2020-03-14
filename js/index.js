@@ -1,4 +1,5 @@
 $(document).ready(function() {
+   $(".load").css("display","none")
    $("nav a").click(function(e){
       e.preventDefault();
       $("html,body").animate({
@@ -241,5 +242,6 @@ document.addEventListener("keydown",function(e) {
           e.preventDefault();
           $("#name,#email,#sub,#message").blur()
       } 
-     
+
      }) ;
+     
